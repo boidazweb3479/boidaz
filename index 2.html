@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Boidaz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    /* Navbar Styling */
+        header {
+            background: #333;
+            color: #fff;
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: #337;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            justify-content: space-around; /* Spread the links evenly */
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px 15px;
+            display: block;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #f39c12;
+            color: #fff;
+        } 
+    
+    
+    
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    h1, h2 {
+      color: #111;
+    }
+    p {
+      line-height: 1.6;
+    }
+    .social-links {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .social-links a {
+      text-decoration: none;
+      color: #fff;
+      margin: 0 10px;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+    .spotify {
+      background-color: #1DB954;
+    }
+    .instagram {
+      background-color: #E4405F;
+    }
+    footer {
+      text-align: center;
+      padding: 10px 0;
+      background: #222;
+      color: #fff;
+      margin-top: 20px;
+    }
+    /* Default styles for responsiveness */
+    @media (max-width: 768px) {
+      .container {
+        padding: 10px;
+        margin: 10px;
+      }
+      .social-links a {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+    
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index 2.html">About</a></li>
+                <li><a href="index 3.html">Music</a></li>
+                <li><a href="index 4.html">Gallery</a></li>
+                <li><a href="index 5.html">Events</a></li>
+                <li><a href="index 6.html">Contact Artist</a></li>
+            </ul>
+        </nav>
+    
+    
+  <header>
+    <h1>About Boidaz</h1>
+  </header>
+  <div class="container">
+    <h2>Welcome to Boidaz’s World</h2>
+    <p>
+      At just 16 years old, Boidaz is embarking on an extraordinary journey into the music industry. 
+      Blending modern pop, hip-hop, and electronic influences, Boidaz's sound is fresh, unique, and deeply personal.
+    </p>
+    <h2>The Beginning</h2>
+    <p>
+      Boidaz grew up with a love for rhythm and melody, discovering his passion for music while experimenting 
+      with beats in his bedroom. What started as a hobby quickly became a calling, as he found joy in creating 
+      tracks that resonate with others.
+    </p>
+    <h2>A Rising Talent</h2>
+    <p>
+      Boidaz writes, produces, and records his music, crafting each song with authenticity and care. 
+      His lyrics explore his life experiences and reflect the perspectives of a new generation. He’s inspired by 
+      his peers, the world around him, and his drive to connect through his art.
+    </p>
+    <h2>Join the Journey</h2>
+    <p>
+      Boidaz’s story is just beginning, and he’s thrilled to have you along for the ride. 
+      Follow his journey as he grows, evolves, and shares his music with the world.
+    </p>
+    <div class="social-links">
+      <a href="https://open.spotify.com/artist/1kAivdgjF9Dl6QsACJbfDj?si=va3iLHdiTiyymvZs8fNbyg" 
+         class="spotify" target="_blank">Spotify</a>
+      <a href="https://www.instagram.com/boidaz_offical?igsh=NG1rOGVscXFiYXZp" 
+         class="instagram" target="_blank">Instagram</a>
+    </div>
+  </div>
+  <footer>
+    <p>© 2024 Boidaz. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // JavaScript to enhance responsiveness
+    function adjustStyles() {
+      const container = document.querySelector('.container');
+      const links = document.querySelectorAll('.social-links a');
+      if (window.innerWidth < 768) {
+        container.style.padding = '10px';
+        container.style.margin = '10px';
+        links.forEach(link => {
+          link.style.display = 'block';
+          link.style.margin = '10px auto';
+          link.style.width = '80%';
+          link.style.textAlign = 'center';
+        });
+      } else {
+        container.style.padding = '20px';
+        container.style.margin = '20px auto';
+        links.forEach(link => {
+          link.style.display = 'inline-block';
+          link.style.margin = '0 10px';
+          link.style.width = 'auto';
+        });
+      }
+    }
+
+    // Add event listener for resizing
+    window.addEventListener('resize', adjustStyles);
+
+    // Initial check
+    adjustStyles();
+  </script>
+</body>
+</html>

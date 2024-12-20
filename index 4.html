@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boidaz Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #1a1a1a;
+      color: #fff;
+    }
+    nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: #337;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            justify-content: space-around; /* Spread the links evenly */
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px 15px;
+            display: block;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #f39c12;
+            color: #fff;
+        }
+    #gallery {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    #gallery h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2.5em;
+      color: #f4a261;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-item {
+      position: relative;
+      cursor: pointer;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+
+    .gallery-item img:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    .caption {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 1em;
+      color: #ccc;
+    }
+
+    /* Lightbox Styles */
+    #lightbox {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    #lightbox img {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 10px;
+    }
+
+    #lightbox .close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 2em;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<nav>
+    <ul>
+         <li><a href="INDEX.html.html">Home</a></li>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="index 2.html">About</a></li>
+         <li><a href="index 3.html">Music</a></li>
+         <li><a href="index 4.html">Gallery</a></li>
+         <li><a href="index 5.html">Events</a></li>
+         <li><a href="index 6.html">Contact Artist</a></li>
+    </ul>
+</nav>
+
+<body>
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item" onclick="openLightbox('BOIDAZ 1.jpg')">
+        <img src="BOIDAZ 1.jpg" alt="Boidaz live performance">
+        
+      </div>
+      <div class="gallery-item" onclick="openLightbox('BOIDAZ 2.jpg')">
+        <img src="BOIDAZ 2.jpg" alt="Boidaz in the studio">
+        
+      </div>
+      <div class="gallery-item" onclick="openLightbox('BOIDAZ 3.jpg')">
+        <img src="BOIDAZ 3.jpg" alt="Album artwork">
+       
+      </div>
+
+      <div class="gallery-item" onclick="openLightbox('BOIDAZ 3.jpg')">
+        <img src="BOIDAZ 4.jpg" alt="Album artwork">
+        
+      </div>
+
+      <div class="gallery-item" onclick="openLightbox('BOIDAZ 3.jpg')">
+        <img src="BOIDAZ 5.jpg" alt="Album artwork">
+       
+      </div>
+      <div class="gallery-item" onclick="openLightbox('BOIDAZ 3.jpg')">
+        <img src="BOIDAZ 6.jpg" alt="Album artwork">
+        
+      </div>
+      <!-- Add more gallery items as needed -->
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <script>
+    function openLightbox(imageSrc) {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      lightbox.style.display = 'flex';
+      lightboxImg.src = imageSrc;
+    }
+
+    function closeLightbox() {
+      const lightbox = document.getElementById('lightbox');
+      lightbox.style.display = 'none';
+    }
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boidaz Music</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    
+    /* Navbar Styling */
+    header {
+      background: #333;
+      color: #fff;
+      width: 100%;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: #337;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      justify-content: space-around; /* Spread the links evenly */
+    }
+
+    nav ul li {
+      margin: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      padding: 10px 15px;
+      display: block;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #f39c12;
+      color: #fff;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    h1, h2 {
+      color: #554;
+    }
+
+    .music-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .music-item {
+      margin: 15px 0;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f9f9f9;
+    }
+
+    .music-item p {
+      margin: 0;
+    }
+
+    .music-item a {
+      text-decoration: none;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 5px;
+      background-color: #1DB954;
+      transition: background-color 0.3s ease;
+    }
+
+    .music-item a:hover {
+      background-color: #17a547;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px 0;
+      background: #222;
+      color: #fff;
+      margin-top: 20px;
+    }
+
+    /* Fade-in styling */
+    .fade-in {
+      opacity: 0;
+      transition: opacity 1.5s ease-in;
+    }
+
+    .fade-in-visible {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="fade-in">
+    <nav>
+        <ul>
+            <li><a href="INDEX.html.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index 2.html">About</a></li>
+            <li><a href="index 3.html">Music</a></li>
+            <li><a href="index 4.html">Gallery</a></li>
+            <li><a href="index 5.html">Events</a></li>
+            <li><a href="index 6.html">Contact Artist</a></li>
+        </ul>
+    </nav>
+
+  <header class="fade-in">
+    <h1>Boidaz Music</h1>
+  </header>
+  <div class="container fade-in">
+    <h2>Explore Boidaz's Tracks</h2>
+    <p>Check out Boidaz's latest releases and listen to them on Spotify or Audiomack!</p>
+    <ul class="music-list">
+      <!-- Songs -->
+      <li class="music-item fade-in">
+        <p><strong>Track 1:</strong> Lover Boi - Boidaz (feat. Dannyflamez) </p>
+        <a href="https://open.spotify.com/track/5kckn3bosdbAUXFBJwUJyB?si=2zJSAXPITwGIChN9HrUboQ" target="_blank">Listen on Spotify</a>
+      </li>
+      <li class="music-item fade-in">
+        <p><strong>Track 2:</strong> Bad Dancer - Boidaz (feat. Tgeelite)</p>
+        <a href="https://open.spotify.com/track/1PCOW6rT2BtUyxit8npDXy?si=dWVYIfABTLmfVs0YMeuP7w" target="_blank">Listen on Spotify</a>
+      </li>
+      <li class="music-item fade-in">
+        <p><strong>Track 3:</strong> Ajokemi Girl (Sped Up) - Boidaz</p>
+        <a href="https://audiomack.com/boidaz_/song/ajokemi-girl-sped-up?share-user-id=119892972" target="_blank">Listen on Audiomack</a>
+      </li>
+      <li class="music-item fade-in">
+        <p><strong>Track 4:</strong> Cruzer Wyte - Something New (feat. Boidaz)</p>
+        <a href="https://audiomack.com/ezejinjoku55/song/cruzer-wyte-something-new-feat?share-user-id=119892972" target="_blank">Listen on Audiomack</a>
+      </li>
+
+      <li class="music-item fade-in">
+        <p><strong>Track 5:</strong> Adabeke - Boidaz (feat. Sammy Kammy)</p>
+        <a href="Spotify:_ https://open.spotify.com/track/4QcmTTDyqmsCe585AcHT6f?si=QHhMnGUqRLSdDafAhMj9VQ " target="_blank">Listen on Spotify</a>
+      </li>
+    </ul>
+    <p>Downloads will be available soon</p>
+  </div>
+  <footer class="fade-in">
+    <p>&copy; 2024 Boidaz. All Rights Reserved.</p>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Select all elements with the 'fade-in' class
+      const fadeInElements = document.querySelectorAll(".fade-in");
+
+      // Add the 'fade-in-visible' class after a slight delay
+      fadeInElements.forEach((element) => {
+        setTimeout(() => {
+          element.classList.add("fade-in-visible");
+        }, 100);
+      });
+    });
+  </script>
+</body>
+</html>

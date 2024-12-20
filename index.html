@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boidaz Music</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            opacity: 0; /* Initial state for fade-in */
+            transition: opacity 0.5s ease; /* Smooth transition */
+        }
+
+        body.fade-in {
+            opacity: 1; /* Visible after page loads */
+        }
+
+        /* Navbar Styling */
+        header {
+            background: #333;
+            color: #fff;
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: #337;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            justify-content: space-around; /* Spread the links evenly */
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px 15px;
+            display: block;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #f39c12;
+            color: #fff;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: #333;
+            color: #fff;
+        }
+
+        .hero img {
+            max-width: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: #ccc;
+        }
+
+        .cta-button {
+            background-color: #f39c12;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #e67e22;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .about,
+        .events {
+            background: #fff;
+        }
+
+        .about h2,
+        .events h2 {
+            margin-bottom: 20px;
+        }
+
+        .about p,
+        .events p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+        }
+
+        footer .social-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer .social-links a:hover {
+            color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index 2.html">About</a></li>
+                <li><a href="index 3.html">Music</a></li>
+                <li><a href="index 4.html">Gallery</a></li>
+                <li><a href="index 5.html">Events</a></li>
+                <li><a href="index 6.html">Contact Artist</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <img src="BOIDAZ 1.jpg" alt="Boidaz" /> <!-- Replace with artist's image -->
+        <h1>Welcome to Boidaz's World</h1>
+        <p>Discover the sound, feel the rhythm, and join the journey!</p>
+        <a href="WEBSITE 3.html" class="cta-button">Explore Music</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Boidaz</h2>
+        <p>Boidaz is a 16-year-old artist embarking on an exciting musical journey. Blending raw talent with heartfelt passion, Boidaz creates sounds that resonate deeply with listeners worldwide. Join the movement and discover his story.</p>
+        <a hrefspace for updates.</p>
+        <a href="WEBSITE 5.html" class="cta-button">View Events</a>
+    </section>
+    <div class="gallery-grid">
+        <div class="gallery-item" onclick="openLightbox('BOIDAZ 1.jpg')">
+          <img src="BOIDAZ 1.jpg" alt="Boidaz live performance">
+          
+        </div>
+      
+    <li class="music-item fade-in">
+        <div style="position: relative; overflow: hidden; width: 300px; height: 30px; background-color: #f1f1f1; border: 1px solid #ccc;">
+            <div style="position: absolute; white-space: nowrap; font-family: Arial, sans-serif; font-weight: bold; font-size: 16px; color: black; animation: slide 5s linear infinite;">
+                Latest Release - Adabeke - Boidaz (feat. Sammy Kammy)
+            </div>
+        </div>
+    
+        <style>
+            @keyframes slide {
+                0% {
+                    transform: translateX(100%);
+                }
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+        </style>
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Boidaz. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/boidaz_offical?igsh=NG1rOGVscXFiYXZp" target="_blank">Instagram</a> |
+            <a href="https://open.spotify.com/artist/1kAivdgjF9Dl6QsACJbfDj?si=va3iLHdiTiyymvZs8fNbyg" target="_blank">Spotify</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Add fade-in effect when the page loads
+        document.addEventListener("DOMContentLoaded", () => {
+            document.body.classList.add("fade-in");
+        });
+
+        // Add smooth transition for links
+        const links = document.querySelectorAll("a");
+        links.forEach(link => {
+            link.addEventListener("click", event => {
+                if (link.href.startsWith(window.location.origin)) {
+                    event.preventDefault();
+                    document.body.classList.remove("fade-in");
+                    setTimeout(() => {
+                        window.location.href = link.href;
+                    }, 500); // Match this duration to the fade-out effect
+                }
+            });
+        });
+    </script>
+</body>
+</html>
